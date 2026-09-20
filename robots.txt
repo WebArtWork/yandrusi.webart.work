@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yandrusi.webart.work/sitemap.xml
