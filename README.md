@@ -18,3 +18,6 @@ Live site: https://yandrusi.webart.work
 
 ## Notes
 The page explicitly states that room photos are illustrative (not real photos of the actual rooms or parking), and that Wi-Fi, parking, pricing, schedule, email, official site, and Instagram details are unconfirmed and should be verified by phone before arrival.
+
+## Forms
+Live form posting to HotelOS (`kp-yandrusi`): `stay-request` (after the contact block; header/mobile "Забронювати" link to it).
