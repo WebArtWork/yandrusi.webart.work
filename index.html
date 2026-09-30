@@ -30,14 +30,12 @@
     .skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:10px 14px}
     header{position:sticky;top:0;z-index:40;background:#f4f0e6ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;gap:26px}.brand{margin-right:auto;display:flex;align-items:center;gap:12px;line-height:1}.brand svg{width:36px;height:36px;flex:none}.brand strong{display:block;font:600 1rem var(--display);letter-spacing:.08em}.brand small{display:block;margin-top:5px;font-size:.72rem;color:var(--muted)}.links{display:flex;gap:24px;font-size:.9rem;font-weight:500}.links a:hover,.phone:hover{color:var(--terra-dk)}.phone{font-weight:700;white-space:nowrap}
     /* Hero: key tag */
-    .hero{padding:88px 0 112px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:64px;align-items:center}
+    .hero{padding:88px 0 112px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:center}
     .hero h1{margin:0;font:600 clamp(3rem,7vw,6.2rem)/.95 var(--display);letter-spacing:-.05em;color:var(--sage-dk)}.hero h1 span{display:block;margin-top:20px;font:500 clamp(1.15rem,2vw,1.5rem)/1.3 var(--sans);letter-spacing:0;color:var(--ink)}
     .checks{list-style:none;margin:34px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}.checks li{display:inline-flex;align-items:center;gap:9px;padding:10px 16px 10px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-weight:500;font-size:.95rem}.checks svg{width:20px;height:20px;flex:none}
     .hero .actions{margin-top:34px}.hero-addr{margin:30px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem;color:var(--muted)}.hero-addr a{font-weight:700;color:var(--terra-dk);border-bottom:1px solid currentColor}
-    .keytag{position:relative;margin:0 auto;width:100%;max-width:380px;transform:rotate(3deg);transform-origin:50% 0}.cord{position:absolute;left:50%;top:-64px;width:80px;height:110px;margin-left:-40px;z-index:2;overflow:visible}
-    .tag{position:relative;padding:74px 22px 22px;background:var(--sage);color:#fff;clip-path:polygon(22% 0,78% 0,100% 12%,100% 100%,0 100%,0 12%);border-radius:0 0 26px 26px}.tag:before{content:"";position:absolute;left:50%;top:26px;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 4px #ffffff40}
-    .tag-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:16px}.tag-head b{font:600 2.3rem/1 var(--display);letter-spacing:-.04em}.tag-head small{font-size:.74rem;line-height:1.3;text-align:right;color:#eef2ec}
-    .window{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--sage-dk)}.tag-foot{margin:14px 0 0;font:600 .9rem var(--display);letter-spacing:.06em;text-align:center}
+    .mono{position:relative;margin:0 18px 18px 0;width:calc(100% - 18px);max-width:500px;aspect-ratio:1/1;order:-1}.mono .fill,.mono .shade{position:absolute;inset:0;clip-path:polygon(0 0,31% 0,50% 36%,69% 0,100% 0,64% 52%,64% 100%,36% 100%,36% 52%)}.mono .shade{background:var(--sage);transform:translate(18px,18px)}.mono .fill{background:var(--sage-dk)}
+    .psign{position:absolute;right:0;bottom:0;width:27%;display:grid;justify-items:center;gap:8px;font-size:.82rem;font-weight:700;color:var(--sage-dk);text-align:center;line-height:1.25}.psign b{display:grid;place-items:center;width:100%;aspect-ratio:1/1;border:3px solid var(--sage-dk);border-radius:16px;background:var(--card);font:600 clamp(2rem,4vw,3.4rem)/1 var(--display);color:var(--sage-dk)}
     /* Stay rows */
     .stay{background:var(--card);border-top:1px solid var(--line)}.stay-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
     .rows{display:grid;gap:88px;margin-top:64px}.row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:center}.row .media{grid-column:1/9;grid-row:1;margin:0;aspect-ratio:3/2;border-radius:22px;overflow:hidden;background:var(--sage-lt)}.row .copy{grid-column:8/13;grid-row:1;position:relative;padding:38px 36px;background:var(--paper);border:1px solid var(--line);border-radius:22px}
@@ -53,9 +51,9 @@
     footer{background:var(--ink);color:#d6dad6;padding:52px 0 28px}.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}.foot .brand strong{color:#fff}.foot .brand small{color:#aab1ad}.foot nav,.foot address{display:grid;gap:8px;font-style:normal;font-size:.92rem}.foot a:hover{color:#fff}.copy{margin:36px 0 0;padding-top:18px;border-top:1px solid #ffffff1f;font-size:.78rem;color:#aab1ad}.mobile-cta{display:none}
     html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.16,.8,.3,1),transform .8s cubic-bezier(.16,.8,.3,1)}html.js .reveal.visible{opacity:1;transform:none}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.js .reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
-    @media(max-width:920px){.links,.nav>.phone{display:none}.hero{padding:64px 0 80px}.hero-grid,.loc-grid,.req-grid,.stay-head{grid-template-columns:1fr;gap:40px}.keytag{max-width:340px;transform:none;margin-top:64px}.section{padding:76px 0}.rows{gap:56px}.row,.row.flip{grid-template-columns:1fr}.row .media,.row.flip .media{grid-column:1;grid-row:1}.row .copy,.row.flip .copy{grid-column:1;grid-row:2;margin:-40px 16px 0;padding:28px 24px}
+    @media(max-width:920px){.links,.nav>.phone{display:none}.hero{padding:64px 0 80px}.hero-grid,.loc-grid,.req-grid,.stay-head{grid-template-columns:1fr;gap:40px}.mono{order:0;max-width:360px;margin:8px auto 18px}.section{padding:76px 0}.rows{gap:56px}.row,.row.flip{grid-template-columns:1fr}.row .media,.row.flip .media{grid-column:1;grid-row:1}.row .copy,.row.flip .copy{grid-column:1;grid-row:2;margin:-40px 16px 0;padding:28px 24px}
       .mobile-cta{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--card);border-top:1px solid var(--line)}.mobile-cta .btn{min-height:48px;padding:0 10px}body{padding-bottom:66px}}
-    @media(max-width:560px){.wrap{width:calc(100% - 32px)}.nav{height:64px}.checks li{font-size:.9rem}.hero .actions .btn{flex:1 1 100%}.keytag{max-width:300px}.tag{padding:66px 18px 18px}.tag-head b{font-size:1.9rem}.request-form{grid-template-columns:1fr;padding:24px 18px}.row .copy,.row.flip .copy{margin:-32px 10px 0}.map,.map iframe{min-height:320px}}
+    @media(max-width:560px){.wrap{width:calc(100% - 32px)}.nav{height:64px}.checks li{font-size:.9rem}.hero .actions .btn{flex:1 1 100%}.mono{max-width:300px;margin:8px auto 12px}.mono .shade{transform:translate(12px,12px)}.psign{font-size:.74rem}.request-form{grid-template-columns:1fr;padding:24px 18px}.row .copy,.row.flip .copy{margin:-32px 10px 0}.map,.map iframe{min-height:320px}}
   </style>
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -74,14 +72,7 @@
         <div class="actions"><a class="btn" href="#stay-request">Запитати вільні дати</a><a class="btn line" href="tel:+380674406644">Зателефонувати</a></div>
         <p class="hero-addr"><span>вул. Північна, 90Б</span><a href="https://maps.app.goo.gl/eo8khxM8q4SCNkco9" target="_blank" rel="noopener">Показати на карті</a></p>
       </div>
-      <figure class="keytag">
-        <svg class="cord" viewBox="0 0 80 110" aria-hidden="true"><path d="M40 0c-22 22 18 44 0 64s-8 34 0 38" fill="none" stroke="#a2532f" stroke-width="3" stroke-linecap="round"/></svg>
-        <div class="tag">
-          <div class="tag-head"><b>90Б</b><small>вул. Північна<br>Кам’янець-Подільський</small></div>
-          <div class="window"><video id="heroVideo" muted loop playsinline preload="metadata" poster="images/room.jpg" aria-hidden="true"><source src="hero-bg.mp4" type="video/mp4"></video></div>
-          <p class="tag-foot">ЯНДРУСІ</p>
-        </div>
-      </figure>
+      <figure class="mono"><div class="shade" aria-hidden="true"></div><div class="fill"><video id="heroVideo" muted loop playsinline preload="metadata" poster="images/room.jpg" aria-hidden="true"><source src="hero-bg.mp4" type="video/mp4"></video></div><div class="psign" aria-hidden="true"><b>P</b>Паркінг безкоштовно</div></figure>
     </div></section>
 
     <section class="section stay" id="stay"><div class="wrap">
